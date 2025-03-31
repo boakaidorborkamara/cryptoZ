@@ -82,3 +82,16 @@ nav {
   align-items: center;
   gap: 15px;
 }
+
+/* ||HERO  */
+#hero {
+  height: 100vh;
+
+  /* background design - added multiple bg elements  */
+  background: url("../assets/Hero/Ellipse-76.png"),
+    url("../assets/Hero/Ellipse-75.png"), url("../assets/Hero/Ellipse1.png"),
+    linear-gradient(0deg, var(--accent-color-100), var(--accent-color-200));
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center, center;
+}
