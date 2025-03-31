@@ -1,10 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
 :root {
   --primary-color: #ffffff;
   --secondary-color: #050e2c;
-  --accent-color-200: #0b2271;
-  --accent-color-100: #2752e7;
   --accent-color-50: #d0dbff;
+  --accent-color-100: #2752e7;
+  --accent-color-200: #0b2271;
   --muted-color: #626262;
   --yellow: #f3de95;
   --pink: #f395d9;
+}
+
+/* ||GENERAL  */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+}
+
+p,
+li,
+button {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.bg-btn {
+  background: var(--accent-color-100);
+  color: white;
+  transition: background 1s;
+}
+
+.bg-btn:hover {
+  background: var(--accent-color-200);
+}
+
+.bg-transparent {
+  background: none;
+}
+
+.container {
+  padding-right: 6em;
+  padding-left: 6em;
+}
+
+/* ||NAVBAR  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+#nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
