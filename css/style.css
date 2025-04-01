@@ -210,3 +210,29 @@ nav {
 #stats-section p {
   color: var(--muted-color);
 }
+
+/* ||MOST TRUSTED SECTION  */
+#most-trusted-section {
+  display: flex;
+}
+
+#most-trusted-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6em;
+}
+
+#most-trusted-section .article-container {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+#most-trusted-section .article-container p {
+  color: var(--muted-color);
+}
+
+#most-trusted-section .article-number {
+  margin-right: 2em;
+  color: var(--accent-color-50);
+}
