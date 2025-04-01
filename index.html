@@ -32,8 +32,8 @@
       <!-- hero section  -->
       <section id="hero" class="container">
         <!-- left side with text -->
-        <div>
-          <h1>
+        <div id="hero-left-side">
+          <h1 class="header-text">
             Your all-in-one platform to buy, sell, trade, and earn
             Cryptocurrencies
           </h1>
@@ -45,20 +45,28 @@
 
           <form>
             <input type="email" placeholder="Email Address" />
-            <input type="submit" value="Get Started" />
+            <button class="bg-btn">Get Started</button>
           </form>
         </div>
 
         <!-- right side with currency converter  -->
-        <div>
+        <div id="hero-right-side">
           <!-- decorator images  -->
-          <img src="./assets/Coin/BitCoin/Cam2.png" alt="" />
-          <img src="./assets/Coin/Ethereum/Cam1.png" alt="" />
+          <img
+            src="./assets/Coin/BitCoin/Cam2.png"
+            alt="BitCoin"
+            id="BitCoin"
+          />
+          <img
+            src="./assets/Coin/Ethereum/Cam1.png"
+            alt="Ethereum"
+            id="Ethereum"
+          />
           <!-- converter container  -->
           <div>
-            <h3>Currency Converter</h3>
-
             <form action="">
+              <h2>Currency Converter</h2>
+
               <!-- element 1  -->
               <div>
                 <label for="amount">Amount</label>

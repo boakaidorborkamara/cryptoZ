@@ -44,6 +44,18 @@ button:hover {
   cursor: pointer;
 }
 
+input {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+select {
+  padding: 15px 5px;
+  border: none;
+  margin: 0px;
+}
+
 .bg-btn {
   background: var(--accent-color-100);
   color: white;
@@ -61,6 +73,11 @@ button:hover {
 .container {
   padding-right: 6em;
   padding-left: 6em;
+}
+
+.header-text {
+  font-size: 3em;
+  margin-bottom: 2rem;
 }
 
 /* ||NAVBAR  */
@@ -94,4 +111,59 @@ nav {
 
   background-repeat: no-repeat, no-repeat;
   background-position: center, center, center;
+
+  display: flex;
+  gap: 60px;
+}
+
+#hero-left-side {
+  flex-basis: 50%;
+  padding: 200px 0px;
+}
+
+#hero-left-side h1 {
+  color: white;
+}
+
+#hero-left-side p {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#hero-right-side {
+  position: relative;
+  color: white;
+}
+
+#hero-right-side form {
+  background: rgba(67, 74, 155, 0.8);
+  padding: 50px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#hero-right-side form h2 {
+  margin-bottom: 15px;
+}
+
+#hero-right-side form div {
+  margin-bottom: 20px;
+}
+
+#hero-right-side .input-container {
+  margin-top: 10px;
+}
+
+#BitCoin {
+  position: absolute;
+  left: 270px;
+  top: 100px;
+  z-index: 0;
+}
+
+#Ethereum {
+  position: relative;
+  top: 495px;
+  right: 90px;
+  z-index: 5;
 }
