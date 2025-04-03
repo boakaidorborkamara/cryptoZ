@@ -236,3 +236,93 @@ nav {
   margin-right: 2em;
   color: var(--accent-color-50);
 }
+
+/* ||FEATURE CARDS  */
+#feature-cards-section {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background: var(--accent-color-50);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* first card  */
+#feature-cards-section > div:nth-child(1) {
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding: 30px;
+}
+
+#feature-cards-section > div:nth-child(1) img {
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#feature-cards-section > div:nth-child(1) h1 {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* second card  */
+#feature-cards-section > div:nth-child(2) {
+  background: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-start: 2;
+  gap: 15px;
+  padding: 30px;
+}
+
+#feature-cards-section > div:nth-child(2) h1 {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#feature-cards-section > div:nth-child(2) img {
+  background: white;
+  border-radius: 10px;
+  flex-basis: 40%;
+  padding: 0px 15px;
+}
+
+/* third card  */
+#feature-cards-section > div:nth-child(3) {
+  background: var(--pink);
+  color: white;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  grid-row-start: 2;
+  grid-row-start: 3;
+  gap: 15px;
+  padding: 30px;
+}
+
+#feature-cards-section > div:nth-child(3) h1 {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#feature-cards-section > div:nth-child(3) img {
+  background: white;
+  border-radius: 10px;
+  flex-basis: 40%;
+  padding: 0px 15px;
+}
+
+/* .card-image-container {
+  padding: 15px;
+  width: 40%;
+} */
