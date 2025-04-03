@@ -223,13 +223,21 @@ nav {
   padding: 6em;
 }
 
+#most-trusted-section > div > div:nth-child(3) {
+  /* background: red; */
+  border-top: 1px solid var(--muted-color);
+  border-bottom: 1px solid var(--muted-color);
+}
+
 #most-trusted-section .article-container {
   display: flex;
-  margin-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 #most-trusted-section .article-container p {
   color: var(--muted-color);
+  margin-top: 1em;
 }
 
 #most-trusted-section .article-number {
@@ -244,7 +252,9 @@ nav {
   background: var(--accent-color-50);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  /* gap: 20px; */
+  column-gap: 15px;
+  row-gap: 10px;
 }
 
 /* first card  */
@@ -322,7 +332,31 @@ nav {
   padding: 0px 15px;
 }
 
-/* .card-image-container {
-  padding: 15px;
-  width: 40%;
-} */
+/* ||GET STARTED  */
+#get-started {
+  background: var(--accent-color-50);
+  text-align: center;
+  /* padding-top: 6em; */
+  padding-bottom: 6em;
+}
+
+#get-started > p {
+  margin-bottom: 2.5em;
+  color: var(--muted-color);
+}
+
+#get-started-cards {
+  display: flex;
+  gap: 20px;
+}
+
+#get-started-cards > div {
+  background: white;
+  border-radius: 15px;
+  padding: 50px 15px;
+}
+
+#get-started-cards > div > p {
+  margin-top: 1em;
+  color: var(--muted-color);
+}
