@@ -6,7 +6,7 @@
   --accent-color-50: #d0dbff;
   --accent-color-100: #2752e7;
   --accent-color-200: #0b2271;
-  --muted-color: #626262;
+  --muted-color: rgb(137, 136, 136);
   --yellow: #f3de95;
   --pink: #f395d9;
 }
@@ -359,4 +359,103 @@ nav {
 #get-started-cards > div > p {
   margin-top: 1em;
   color: var(--muted-color);
+}
+
+/* ||WHAT PEOPLE SAYING  */
+#what-people-saying {
+  position: relative;
+  /* background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  ); */
+}
+
+#what-people-saying::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 30%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  bottom: 0px;
+  /* left: 5px; */
+}
+
+#what-people-saying h1 {
+  text-align: center;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#cards-container article {
+  border: 1px solid var(--muted-color);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* ||NEXT STEPS  */
+#next-step {
+  background-color: var(--accent-color-100);
+  /* background: url(./assets/btc.png); */
+
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 6rem;
+  border-radius: 15px;
+}
+
+#next-step div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#next-step h4 {
+  color: white;
+}
+
+/* ||FOOTER  */
+footer {
+  background: var(--accent-color-100);
+  border-radius: 15px;
+  padding: 6em;
+  margin: 6rem;
+  color: white;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+footer h6 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* upper footer section  */
+footer > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* lower footer section  */
+footer > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+  border-top: 1px solid white;
 }
