@@ -364,11 +364,8 @@ nav {
 /* ||WHAT PEOPLE SAYING  */
 #what-people-saying {
   position: relative;
-  /* background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  ); */
+  background: url("../assets/what-people-saying/bg-img.png");
+  background-repeat: no-repeat;
 }
 
 #what-people-saying::after {
@@ -383,34 +380,66 @@ nav {
   );
 
   bottom: 0px;
-  /* left: 5px; */
 }
 
 #what-people-saying h1 {
   text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 #cards-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-rows: masonry; */
+  /* grid-auto-rows: auto; */
+
+  /* column-count: 4; */
+  columns: 300px;
 }
 
 #cards-container article {
   border: 1px solid var(--muted-color);
   padding: 15px;
   border-radius: 15px;
+  /* grid-row-end: span 10; */
+  margin-bottom: 1em;
+}
+
+#cards-container article img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.article-profile-section {
+  display: flex;
+  align-tems: center;
+  gap: 15px;
+  margin-bottom: 1em;
+}
+
+.article-profile-section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ||NEXT STEPS  */
 #next-step {
-  background-color: var(--accent-color-100);
-  /* background: url(./assets/btc.png); */
+  background-image: url("../assets/next-step/Ellipse 308.png"),
+    url("../assets/next-step/Ellipse 307.png"),
+    url("../assets/next-step/Ellipse 309.png"),
+    linear-gradient(var(--accent-color-100), var(--accent-color-100));
+
+  background-repeat: no-repeat;
+  background-size: auto, 50%, auto, 100%;
+  background-position-x: 0px, 130%, 70%, center;
+  background-position-y: 0px, 100%, 100%, center;
 
   display: flex;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin: 6rem;
+  padding-top: 6em;
+  padding-bottom: 4em;
+  margin: 7rem;
   border-radius: 15px;
 }
 
@@ -418,10 +447,33 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 60%;
 }
 
 #next-step h4 {
   color: white;
+}
+
+#next-step-images {
+  position: relative;
+}
+
+#btc-icon {
+  position: absolute;
+  bottom: 160px;
+  right: -350px;
+}
+
+#Ethereum-icon {
+  position: absolute;
+  left: 350px;
+  top: 0px;
+}
+
+#luna-icon {
+  position: absolute;
+  left: 200px;
+  top: 70px;
 }
 
 /* ||FOOTER  */
