@@ -110,7 +110,7 @@ nav {
 /* ||HERO  */
 #hero {
   height: 100vh;
-  padding-top: 50px;
+  /* padding-top: 40px; */
 
   /* background design - added multiple bg elements  */
   background: url("../assets/Hero/Ellipse-76.png"),
@@ -121,12 +121,15 @@ nav {
   background-position: center, center, center;
 
   display: flex;
-  gap: 60px;
+  gap: 100px;
 }
 
 #hero-left-side {
   flex-basis: 50%;
   padding: 200px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #hero-left-side h1 {
@@ -141,38 +144,57 @@ nav {
 #hero-right-side {
   position: relative;
   color: white;
+  /* width: 50%; */
 }
 
 #hero-right-side form {
   background: rgba(67, 74, 155, 0.8);
   padding: 50px;
   border-radius: 5px;
+  width: 100%;
   position: relative;
 }
 
 #hero-right-side form h2 {
   margin-bottom: 15px;
+  font-size: 2em;
+  font-weight: 200;
 }
 
 #hero-right-side form div {
+}
+
+.form-field-container {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #hero-right-side .input-container {
   margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background: white;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+#hero-right-side .input-container input {
+  width: 100%;
+  border-radius: 0px;
 }
 
 #BitCoin {
   position: absolute;
-  left: 270px;
+  left: 400px;
   top: 100px;
   z-index: 0;
 }
 
 #Ethereum {
   position: relative;
-  top: 495px;
-  right: 90px;
+  top: 600px;
+  right: 60px;
   z-index: 5;
 }
 
