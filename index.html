@@ -64,7 +64,7 @@
           />
           <!-- converter container  -->
           <div>
-            <form action="">
+            <form action="" id="crypto-converter-form">
               <h2>Currency Converter</h2>
 
               <!-- element 1  -->
@@ -73,11 +73,16 @@
 
                 <!-- nested form field  -->
                 <div class="input-container">
-                  <select name="" id="">
-                    <option value="">GPA</option>
+                  <select name="amount" id="amount-dropdown">
+                    <!-- <option value="GPA">
+                      <img
+                        src="https://assets.coinlayer.com/icons/XID.png"
+                        alt=""
+                      />GPA
+                    </option> -->
                   </select>
                   <hr />
-                  <input type="text" placeholder="0.000" />
+                  <input type="number" placeholder="0.000" />
                 </div>
               </div>
 
@@ -87,8 +92,8 @@
 
                 <!-- nested form field  -->
                 <div class="input-container">
-                  <select name="" id="">
-                    <option value="">ABD</option>
+                  <select name="" id="convert-to-dropdown">
+                    <!-- <option value="">ABD</option> -->
                   </select>
                   <hr />
                   <input type="text" placeholder="0.000" />
@@ -548,5 +553,8 @@
         >
       </div>
     </footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
