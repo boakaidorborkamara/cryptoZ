@@ -69,11 +69,13 @@
 
               <!-- element 1  -->
               <div class="form-field-container">
-                <label for="amount">Amount</label>
+                <label for="amount">Convert Amount From</label>
 
                 <!-- nested form field  -->
                 <div class="input-container">
                   <select name="amount" id="amount-dropdown">
+                    <!-- <option value="deded">deded</option> -->
+                    <!-- <option value="">fsed</option> -->
                     <!-- <option value="GPA">
                       <img
                         src="https://assets.coinlayer.com/icons/XID.png"
@@ -82,7 +84,11 @@
                     </option> -->
                   </select>
                   <hr />
-                  <input type="number" placeholder="0.000" />
+                  <input
+                    type="number"
+                    placeholder="0.000"
+                    id="amount-to-be-converted"
+                  />
                 </div>
               </div>
 
@@ -93,7 +99,8 @@
                 <!-- nested form field  -->
                 <div class="input-container">
                   <select name="" id="convert-to-dropdown">
-                    <!-- <option value="">ABD</option> -->
+                    <!-- <option value="ABD">ABD</option> -->
+                    <!-- <option value="TEST">TEST</option> -->
                   </select>
                   <hr />
                   <input type="text" placeholder="0.000" />
@@ -106,7 +113,7 @@
 
                 <!-- nested form field  -->
                 <div class="input-container">
-                  <input type="date" placeholder="0.000" />
+                  <input type="date" id="date" />
                 </div>
               </div>
 
