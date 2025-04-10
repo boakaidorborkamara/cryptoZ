@@ -67,13 +67,13 @@
             <form action="" id="crypto-converter-form">
               <h2>Currency Converter</h2>
 
-              <!-- element 1  -->
+              <!-- convert from container  -->
               <div class="form-field-container">
                 <label for="amount">Convert Amount From</label>
 
-                <!-- nested form field  -->
+                <!-- convert from currency  -->
                 <div class="input-container">
-                  <select name="amount" id="amount-dropdown">
+                  <select name="convert_from" id="amount-dropdown">
                     <!-- <option value="deded">deded</option> -->
                     <!-- <option value="">fsed</option> -->
                     <!-- <option value="GPA">
@@ -84,21 +84,24 @@
                     </option> -->
                   </select>
                   <hr />
+
+                  <!-- amount  -->
                   <input
                     type="number"
+                    name="amount"
                     placeholder="0.000"
                     id="amount-to-be-converted"
                   />
                 </div>
               </div>
 
-              <!-- element 2  -->
+              <!-- convert to  -->
               <div>
                 <label for="amount">Converted to</label>
 
                 <!-- nested form field  -->
                 <div class="input-container">
-                  <select name="" id="convert-to-dropdown">
+                  <select name="convert_to" id="convert-to-dropdown">
                     <!-- <option value="ABD">ABD</option> -->
                     <!-- <option value="TEST">TEST</option> -->
                   </select>
@@ -107,13 +110,13 @@
                 </div>
               </div>
 
-              <!-- element 3  -->
+              <!-- date  -->
               <div>
                 <label for="amount">Date</label>
 
                 <!-- nested form field  -->
                 <div class="input-container">
-                  <input type="date" id="date" />
+                  <input type="date" name="date" id="date" />
                 </div>
               </div>
 
@@ -125,11 +128,23 @@
 
       <!-- clients section  -->
       <section id="client-section" class="container">
-        <img src="./assets/binance logo.png" alt="Binance Logo" />
-        <img src="./assets/coinbase-logo.png" alt="Coinbase Logo" />
-        <img src="./assets/bitcoin-logo.png" alt="Bitcoin Logo" />
-        <img src="./assets/tether-logo.png" alt="Tether Logo" />
-        <img src="./assets/bitmex logo.png" alt="Bitmex Logo" />
+        <img
+          src="./assets/binance logo.png"
+          alt="Binance Logo"
+          class="client"
+        />
+        <img
+          src="./assets/coinbase-logo.png"
+          alt="Coinbase Logo"
+          class="client"
+        />
+        <img
+          src="./assets/bitcoin-logo.png"
+          alt="Bitcoin Logo"
+          class="client"
+        />
+        <img src="./assets/tether-logo.png" alt="Tether Logo" class="client" />
+        <img src="./assets/bitmex logo.png" alt="Bitmex Logo" class="client" />
       </section>
 
       <!-- stats section  -->

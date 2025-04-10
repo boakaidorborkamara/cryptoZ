@@ -120,6 +120,7 @@ nav {
 
   display: flex;
   gap: 100px;
+  overflow: hidden;
 }
 
 #hero-left-side {
@@ -132,11 +133,23 @@ nav {
 
 #hero-left-side h1 {
   color: white;
+  /* translate: -1.5em 0px; */
+  animation-name: slide-in-from-left;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 }
 
 #hero-left-side p {
   color: white;
   margin-bottom: 2rem;
+  translate: 0vw 0vw;
+  animation-name: slide-in-from-left;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration: 1;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 
 #hero-right-side {
@@ -151,6 +164,11 @@ nav {
   border-radius: 5px;
   width: 100%;
   position: relative;
+  translate: 100vw 0px;
+  animation-name: slide-in-right;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 
 #hero-right-side form h2 {
@@ -188,6 +206,10 @@ nav {
   left: 400px;
   top: 100px;
   z-index: 0;
+  animation-name: slide-in-right;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
 }
 
 #Ethereum {
@@ -195,6 +217,32 @@ nav {
   top: 600px;
   right: 60px;
   z-index: 5;
+  animation-name: slide-in-from-left;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+}
+
+@keyframes slide-in-right {
+  from {
+    translate: 100vw 0px;
+    opacity: 0;
+  }
+  to {
+    translate: 0vw 0vw;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    translate: -100vw 0px;
+    opacity: 0;
+  }
+  to {
+    translate: 0vw 0vw;
+    opacity: 1;
+  }
 }
 
 /* ||CLIENT SECTION  */
@@ -205,6 +253,23 @@ nav {
   fit-items: cover;
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.client {
+  animation-name: change-stats-section-background;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+  /* animation-timeline: scroll(); */
+}
+
+@keyframes change-stats-section-background {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 /* ||STATS SECTION  */

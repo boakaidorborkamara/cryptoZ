@@ -16,32 +16,21 @@ window.addEventListener("load", async () => {
 
   // monitor form for changes in fields
   DOM.crypto_converter_form.addEventListener("change", async (e) => {
-    let target_ele = e.target;
+    // extract form data
+    let form_data = new FormData(DOM.crypto_converter_form);
 
-    let amount_currency =
-      target_ele.id == "amount-dropdown" ? target_ele.value : null;
+    // Form values
+    let convert_from = form_data.get("convert_from");
+    let amount = form_data.get("amount");
+    let convert_to = form_data.get("convert_to");
+    let date = form_data.get("date");
 
-    let amount_to_convert =
-      target_ele.id == "amount-to-be-converted" ? target_ele.value : null;
-
-    let currency_to_convert_to =
-      target_ele.id == "convert-to-dropdown" ? target_ele.value : null;
-
-    let date = target_ele.id == "date" ? target_ele.value : null;
-
-    console.log(
-      amount_currency,
-      amount_to_convert,
-      currency_to_convert_to,
-      date
-    );
-
-    // http://api.coinlayer.com/convert?access_key=8917ef8540765aaf5d1f0fa451b332e0&from=BTC&to=ETH&amount=10
-    let data = await fetchData(
-      "https://fast-price-exchange-rates.p.rapidapi.com/api/v1/convert?amount=1&base_currency=EUR&quote_currency=USD%2CBTC"
-    );
-
-    console.log("data", data);
+    console.log({
+      convert_from,
+      amount,
+      convert_to,
+      date,
+    });
   });
 });
 
@@ -78,15 +67,19 @@ async function displayDropdownItems(crypto_list, DOM_node) {
 
 // fetch and return data from api
 async function fetchData(url) {
-  const api_url = url;
+  try {
+    const api_url = url;
 
-  const response = await fetch(api_url, {
-    headers: {
-      "x-rapidapi-key": "8267f7a4e0mshf69609913b1eb22p11bd12jsn710ca9ddccf3",
-    },
-  });
+    const response = await fetch(api_url, {
+      headers: {
+        "x-rapidapi-key": "8267f7a4e0mshf69609913b1eb22p11bd12jsn710ca9ddccf3",
+      },
+    });
 
-  const data = await response.json();
+    const data = await response.json();
 
-  return data;
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
 }
