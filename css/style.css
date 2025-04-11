@@ -225,7 +225,7 @@ nav {
 
 @keyframes slide-in-right {
   from {
-    translate: 100vw 0px;
+    translate: 10vw 0px;
     opacity: 0;
   }
   to {
@@ -236,7 +236,7 @@ nav {
 
 @keyframes slide-in-from-left {
   from {
-    translate: -100vw 0px;
+    translate: -10vw 0px;
     opacity: 0;
   }
   to {
@@ -260,7 +260,7 @@ nav {
   animation-name: change-stats-section-background;
   animation-duration: 2s;
   /* animation-iteration-count: infinite; */
-  /* animation-timeline: scroll(); */
+  animation-timeline: scroll(y, root);
 }
 
 @keyframes change-stats-section-background {
@@ -282,6 +282,9 @@ nav {
   border: 1px solid rgb(193, 192, 192);
   margin: 6em;
   border-radius: 5px;
+  animation-name: slide-in-from-left;
+  animation-duration: 1.5s;
+  animation-timeline: view();
 }
 
 #stats-section div {
@@ -315,6 +318,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   padding: 6em;
+  animation-name: slide-in-from-left;
+  animation-duration: 1.5s;
+  animation-timeline: view();
 }
 
 #most-trusted-section > div > div:nth-child(3) {
@@ -359,6 +365,9 @@ nav {
   grid-row-start: 1;
   grid-row-end: 4;
   padding: 30px;
+  animation-name: slide-in-from-left;
+  animation-duration: 1.5s;
+  animation-timeline: view();
 }
 
 #feature-cards-section > div:nth-child(1) img {
@@ -384,6 +393,9 @@ nav {
   grid-row-start: 2;
   gap: 15px;
   padding: 30px;
+  animation-name: slide-in-from-left;
+  animation-duration: 1.5s;
+  animation-timeline: view();
 }
 
 #feature-cards-section > div:nth-child(2) h1 {
@@ -411,6 +423,9 @@ nav {
   grid-row-start: 3;
   gap: 15px;
   padding: 30px;
+  animation-name: slide-in-right;
+  animation-duration: 1.5s;
+  animation-timeline: view();
 }
 
 #feature-cards-section > div:nth-child(3) h1 {
