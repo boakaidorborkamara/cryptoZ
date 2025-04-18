@@ -620,3 +620,36 @@ footer > div:nth-child(2) {
   margin-top: 40px;
   border-top: 1px solid white;
 }
+
+/* MEDIA QURIES  */
+/* tablets  */
+@media (max-width: 768px) {
+  /* nav  */
+  #nav-links {
+    display: none;
+  }
+
+  #nav-cta {
+    display: none;
+  }
+
+  /* hero  */
+  #hero {
+    flex-direction: column;
+    height: auto;
+    gap: 50px;
+  }
+
+  #hero-left-side {
+    padding: 200px 0px 0px 0px;
+  }
+
+  #hero-right-side {
+    margin-bottom: 150px;
+    margin-top: -150px;
+  }
+
+  #hero-right-side form {
+    width: auto;
+  }
+}
