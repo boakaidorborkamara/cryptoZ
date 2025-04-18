@@ -627,7 +627,7 @@ footer > div:nth-child(2) {
 
 /* MEDIA QURIES  */
 /* tablets  */
-@media (max-width: 768px) {
+@media (min-width: 424px) and (max-width: 768px) {
   nav {
     align-items: center;
   }
