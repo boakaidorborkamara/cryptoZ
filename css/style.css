@@ -672,4 +672,14 @@ footer > div:nth-child(2) {
     border-top: 1px solid rgb(193, 192, 192);
     border-bottom: 1px solid rgb(193, 192, 192);
   }
+
+  /* most trusted section  */
+  #most-trusted-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #most-trusted-section .article-container {
+    flex-direction: column;
+  }
 }
