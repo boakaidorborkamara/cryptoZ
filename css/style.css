@@ -652,4 +652,24 @@ footer > div:nth-child(2) {
   #hero-right-side form {
     width: auto;
   }
+
+  /* client section  */
+  #client-section {
+    overflow: scroll;
+    gap: 50px;
+  }
+
+  /* stats section  */
+  #stats-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #stats-section div:nth-child(2) {
+    border-right: none;
+    border-left: none;
+
+    border-top: 1px solid rgb(193, 192, 192);
+    border-bottom: 1px solid rgb(193, 192, 192);
+  }
 }
