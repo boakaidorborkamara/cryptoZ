@@ -92,6 +92,10 @@ nav {
   padding: 15px;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
 #nav-links {
   display: flex;
   align-items: center;
@@ -624,6 +628,14 @@ footer > div:nth-child(2) {
 /* MEDIA QURIES  */
 /* tablets  */
 @media (max-width: 768px) {
+  nav {
+    align-items: center;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
   /* nav  */
   #nav-links {
     display: none;
