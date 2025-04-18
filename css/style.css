@@ -694,4 +694,19 @@ footer > div:nth-child(2) {
   #get-started-cards {
     flex-direction: column;
   }
+
+  /* next steps section */
+  #next-step-images {
+    display: none;
+  }
+
+  #next-step div:nth-child(1) {
+    width: 100%;
+  }
+
+  /* footer */
+  footer > div:nth-child(1) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
