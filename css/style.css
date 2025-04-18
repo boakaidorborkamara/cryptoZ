@@ -682,4 +682,16 @@ footer > div:nth-child(2) {
   #most-trusted-section .article-container {
     flex-direction: column;
   }
+
+  /* features card  */
+  #feature-cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* get started cards  */
+  #get-started-cards {
+    flex-direction: column;
+  }
 }
