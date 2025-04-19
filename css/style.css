@@ -722,3 +722,70 @@ footer > div:nth-child(2) {
     gap: 20px;
   }
 }
+
+@media (min-width: 1px) and (max-width: 426px) {
+  .container {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .header-text {
+    font-size: 2em;
+  }
+
+  /* hero  */
+  #hero-left-side {
+    text-align: center;
+  }
+
+  #hero-left-side form button {
+    width: 100%;
+  }
+
+  #hero-left-side form input {
+    width: 84%;
+  }
+
+  #Ethereum {
+    top: 650px;
+  }
+
+  #BitCoin {
+    left: 250px;
+  }
+
+  /* stats  */
+  #stats-section div:nth-child(2) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  /* features card  */
+  #feature-cards-section > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  section > div:nth-child(3) {
+    flex-direction: column;
+  }
+
+  /* next steps  */
+  #next-step {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  /* footer  */
+  footer {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  footer > div:nth-child(2) {
+    padding: 40px 0px 40px 0px;
+  }
+
+  footer > div:nth-child(1) {
+    flex-direction: column;
+  }
+}
